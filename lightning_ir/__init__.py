@@ -1,5 +1,7 @@
 from ._register_external_models import _register_external_models
 from ._register_internal_models import _register_internal_models
+
+
 from .base import (
     LightningIRClassFactory,
     LightningIRConfig,
@@ -198,4 +200,7 @@ __all__ = [
     "TrainBatch",
     "TupleDataset",
     "WarmupLRScheduler",
+    "XTRConfig",       
+    "XTRModel",        
+    "XTRTokenizer",
 ]

@@ -16,6 +16,9 @@ from .models import (
     T5CrossEncoderConfig,
     T5CrossEncoderModel,
     T5CrossEncoderTokenizer,
+    XTRConfig,
+    XTRModel,
+    XTRTokenizer,
 )
 
 
@@ -39,3 +42,6 @@ def _register_internal_models():
     AutoConfig.register(T5CrossEncoderConfig.model_type, T5CrossEncoderConfig)
     AutoModel.register(T5CrossEncoderConfig, T5CrossEncoderModel)
     AutoTokenizer.register(T5CrossEncoderConfig, T5CrossEncoderTokenizer)
+    AutoConfig.register(XTRConfig.model_type, XTRConfig)
+    AutoModel.register(XTRConfig, XTRModel)
+    AutoTokenizer.register(XTRConfig, XTRTokenizer)

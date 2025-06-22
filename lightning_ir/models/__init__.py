@@ -3,6 +3,7 @@ from .dpr import DprConfig, DprModel
 from .set_encoder import SetEncoderConfig, SetEncoderModel, SetEncoderTokenizer
 from .splade import SpladeConfig, SpladeModel
 from .t5_cross_encoder import T5CrossEncoderConfig, T5CrossEncoderModel, T5CrossEncoderTokenizer
+from .xtr import XTRConfig, XTRModel, XTRTokenizer
 
 __all__ = [
     "ColConfig",
@@ -18,4 +19,10 @@ __all__ = [
     "T5CrossEncoderConfig",
     "T5CrossEncoderModel",
     "T5CrossEncoderTokenizer",
+    "XTRConfig",
+    "XTRModel",
+    "XTRTokenizer",
 ]
+
+
+
