@@ -1,0 +1,33 @@
+[project]
+name = "lightning-ir"
+version = "0.1.0"
+description = "Neural IR models like XTR and SPLADE"
+authors = [
+  {name = "Mohamad", email = "mohamad.kharboutli@uni-jena.de"}
+]
+dependencies = [
+  "torch",
+  "transformers",
+  "datasets",
+  "faiss-cpu",
+  "scikit-learn",
+  "tqdm"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "loss",
+    "data",
+    "base",
+    "models",
+    "retrieve",
+    "callbacks",
+    "bi_encoder",
+    "schedulers",
+    "cross_encoder",
+    "modeling_utils"
+]

@@ -7,9 +7,9 @@ This module defines the model class used to implement cross-encoder models.
 from dataclasses import dataclass
 from typing import Type
 
-import torch
 from transformers import BatchEncoding
 
+import torch
 from ..base import LightningIRModel, LightningIROutput
 from ..base.model import batch_encoding_wrapper
 from . import CrossEncoderConfig

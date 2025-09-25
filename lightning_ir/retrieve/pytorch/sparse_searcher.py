@@ -78,3 +78,5 @@ class TorchSparseSearcher(ExactSearcher):
 class TorchSparseSearchConfig(ExactSearchConfig):
     search_class = TorchSparseSearcher
     SUPPORTED_MODELS = {SpladeConfig.model_type}
+
+
